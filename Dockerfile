@@ -9,5 +9,5 @@ RUN rm -rf bonativo.zip &&\
     cp -rf bonativo/* . &&\
     rm -rf bonativo &&\
     touch hello
-EXPOSE 8080
+EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
